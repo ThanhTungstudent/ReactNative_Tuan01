@@ -5,6 +5,7 @@ const bai2_1 = require("./bai2");
 const bai3_1 = require("./bai3");
 const bai4_1 = require("./bai4");
 const bai5_1 = require("./bai5");
+const bai8_1 = require("./bai8");
 // Bai 1
 console.log("Bai 1");
 const person = new bai1_1.Person("Pham Thanh Tung", 20);
@@ -28,3 +29,17 @@ console.log("\nNap 100");
 console.log(`\nSo tai khoan sau khi nap tien: ${bankAccount.depposit(100)}`);
 console.log("\nChuyen 50");
 console.log(`\nSo tai khoan sau khi chuyen tien: ${bankAccount.withdraw(50)}`);
+// Bai 8
+console.log("\nBai 8");
+const products = [
+    new bai8_1.Product("Pen", 5),
+    new bai8_1.Product("keyBoard", 10),
+    new bai8_1.Product("car", 200),
+    new bai8_1.Product("moto", 150),
+    new bai8_1.Product("Monitor", 300),
+];
+console.log("\nAll product: \n");
+products.forEach(p => p.getProduct());
+const productFilter = products.filter(pro => pro.price > 100);
+console.log("/nProduct with price > 100\n");
+productFilter.forEach(p => p.getProduct());
