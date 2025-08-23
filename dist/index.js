@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const bai1_1 = require("./bai1");
 const bai2_1 = require("./bai2");
 const bai3_1 = require("./bai3");
+const bai4_1 = require("./bai4");
 // Bai 1
 console.log("Bai 1");
 const person = new bai1_1.Person("Pham Thanh Tung", 20);
@@ -15,3 +16,7 @@ student.allInfo();
 console.log("\nBai 3");
 const car = new bai3_1.Car("Toyota", "Camry", 2025);
 car.showCarInfo();
+// Bai 4
+console.log("\nBai 4");
+const rectangle = new bai4_1.Rectangle(10, 20);
+console.log(`Area: ${rectangle.area()}, Perimeter: ${rectangle.perimeter()}`);

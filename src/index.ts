@@ -1,6 +1,7 @@
 import { Person } from "./bai1";
 import { Student } from "./bai2";
 import { Car } from "./bai3";
+import { Rectangle } from "./bai4";
 
 
 // Bai 1
@@ -17,4 +18,11 @@ student.allInfo()
 console.log("\nBai 3");
 const car = new Car("Toyota", "Camry", 2025);
 car.showCarInfo()
+
+// Bai 4
+console.log("\nBai 4");
+const rectangle = new Rectangle(10, 20)
+console.log(`Area: ${rectangle.area()}, Perimeter: ${rectangle.perimeter()}`);
+
+
 
