@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const bai1_1 = require("./bai1");
+const bai10_1 = require("./bai10");
 const bai2_1 = require("./bai2");
 const bai3_1 = require("./bai3");
 const bai4_1 = require("./bai4");
@@ -43,3 +44,7 @@ products.forEach(p => p.getProduct());
 const productFilter = products.filter(pro => pro.price > 100);
 console.log("/nProduct with price > 100\n");
 productFilter.forEach(p => p.getProduct());
+// Bai 10
+console.log("/nBai 10\n");
+const user = new bai10_1.Account("Pham Thanh Tung", "123456789", "dinotimo");
+console.log(`Verify: ${user.verify("1234567")}`);

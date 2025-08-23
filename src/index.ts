@@ -1,4 +1,5 @@
 import { Person } from "./bai1";
+import { Account } from "./bai10";
 import { Student } from "./bai2";
 import { Car } from "./bai3";
 import { Rectangle } from "./bai4";
@@ -48,6 +49,14 @@ products.forEach(p => p.getProduct())
 const productFilter = products.filter(pro => pro.price > 100)
 console.log("/nProduct with price > 100\n");
 productFilter.forEach(p => p.getProduct())
+
+// Bai 10
+console.log("/nBai 10\n");
+const user = new Account("Pham Thanh Tung", "123456789", "dinotimo")
+console.log(`Verify: ${user.verify("1234567")}`);
+
+
+
 
 
 
