@@ -14,6 +14,7 @@ const bai8_1 = require("./bai8");
 const bai14_1 = require("./bai14");
 const bai15_1 = require("./bai15");
 const bai16_1 = require("./bai16");
+const bai17_1 = require("./bai17");
 // Bai 1
 console.log("Bai 1");
 const person = new bai1_1.Person("Pham Thanh Tung", 20);
@@ -88,3 +89,7 @@ lib.getBooks();
 (0, console_1.log)("\nBai 16\n");
 const numberBox = new bai16_1.Box(123);
 (0, console_1.log)("Number in box: ", numberBox.value);
+// Bai 17
+(0, console_1.log)("\nBai 17\n");
+const logger = bai17_1.Logger.getInstance();
+logger.logs("Hello from singleton");

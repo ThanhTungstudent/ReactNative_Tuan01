@@ -12,6 +12,7 @@ import { Product } from "./bai8";
 import { Developer, Manager } from "./bai14";
 import { Book1, Library } from "./bai15";
 import { Box } from "./bai16";
+import { Logger } from "./bai17";
 
 // Bai 1
 console.log("Bai 1");
@@ -98,3 +99,8 @@ lib.getBooks();
 log("\nBai 16\n");
 const numberBox = new Box<number>(123);
 log("Number in box: ", numberBox.value);
+
+// Bai 17
+log("\nBai 17\n");
+const logger = Logger.getInstance();
+logger.logs("Hello from singleton");
