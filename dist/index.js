@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const console_1 = require("console");
 const bai1_1 = require("./bai1");
 const bai10_1 = require("./bai10");
 const bai11_1 = require("./bai11");
@@ -10,6 +11,7 @@ const bai3_1 = require("./bai3");
 const bai4_1 = require("./bai4");
 const bai5_1 = require("./bai5");
 const bai8_1 = require("./bai8");
+const bai14_1 = require("./bai14");
 // Bai 1
 console.log("Bai 1");
 const person = new bai1_1.Person("Pham Thanh Tung", 20);
@@ -69,3 +71,9 @@ const square = new bai13_1.Square(10);
 const cricle = new bai13_1.Circle(5);
 console.log("Square area: ", square.area());
 console.log("\nCricle area: ", cricle.area());
+// Bai 14
+(0, console_1.log)("\nBai 14\n");
+const manager = new bai14_1.Manager("Dino");
+const coder = new bai14_1.Developer("Timo");
+manager.manage();
+coder.code();

@@ -1,3 +1,4 @@
+import { log } from "console";
 import { Person } from "./bai1";
 import { Account } from "./bai10";
 import { Cat, Dog } from "./bai11";
@@ -8,6 +9,7 @@ import { Car } from "./bai3";
 import { Rectangle } from "./bai4";
 import { BankAccount } from "./bai5";
 import { Product } from "./bai8";
+import { Developer, Manager } from "./bai14";
 
 // Bai 1
 console.log("Bai 1");
@@ -76,3 +78,10 @@ const square = new Square(10);
 const cricle = new Circle(5);
 console.log("Square area: ", square.area());
 console.log("\nCricle area: ", cricle.area());
+
+// Bai 14
+log("\nBai 14\n");
+const manager = new Manager("Dino");
+const coder = new Developer("Timo");
+manager.manage();
+coder.code();
