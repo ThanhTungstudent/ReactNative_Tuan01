@@ -2,6 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const bai1_1 = require("./bai1");
 const bai10_1 = require("./bai10");
+const bai11_1 = require("./bai11");
+const bai12_1 = require("./bai12");
 const bai2_1 = require("./bai2");
 const bai3_1 = require("./bai3");
 const bai4_1 = require("./bai4");
@@ -48,3 +50,15 @@ productFilter.forEach(p => p.getProduct());
 console.log("/nBai 10\n");
 const user = new bai10_1.Account("Pham Thanh Tung", "123456789", "dinotimo");
 console.log(`Verify: ${user.verify("1234567")}`);
+// Bai 11
+console.log("\nBai 11\n");
+const dog = new bai11_1.Dog("Dino");
+dog.bark();
+const cat = new bai11_1.Cat("luon");
+cat.meow();
+// Bai 12
+console.log("\nBai 12\n");
+const bird = new bai12_1.Bird();
+bird.fly();
+const fish = new bai12_1.Fish();
+fish.swim();

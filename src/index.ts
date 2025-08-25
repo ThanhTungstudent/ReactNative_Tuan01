@@ -1,5 +1,7 @@
 import { Person } from "./bai1";
 import { Account } from "./bai10";
+import { Cat, Dog } from "./bai11";
+import { Bird, Fish } from "./bai12";
 import { Student } from "./bai2";
 import { Car } from "./bai3";
 import { Rectangle } from "./bai4";
@@ -55,6 +57,19 @@ console.log("/nBai 10\n");
 const user = new Account("Pham Thanh Tung", "123456789", "dinotimo")
 console.log(`Verify: ${user.verify("1234567")}`);
 
+
+// Bai 11
+console.log("\nBai 11\n");
+const dog = new Dog("Dino")
+dog.bark()
+const cat = new Cat("luon")
+cat.meow()
+// Bai 12
+console.log("\nBai 12\n");
+const bird = new Bird()
+bird.fly()
+const fish = new Fish()
+fish.swim()
 
 
 
