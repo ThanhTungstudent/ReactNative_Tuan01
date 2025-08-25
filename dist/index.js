@@ -12,6 +12,7 @@ const bai4_1 = require("./bai4");
 const bai5_1 = require("./bai5");
 const bai8_1 = require("./bai8");
 const bai14_1 = require("./bai14");
+const bai15_1 = require("./bai15");
 // Bai 1
 console.log("Bai 1");
 const person = new bai1_1.Person("Pham Thanh Tung", 20);
@@ -77,3 +78,8 @@ const manager = new bai14_1.Manager("Dino");
 const coder = new bai14_1.Developer("Timo");
 manager.manage();
 coder.code();
+// Bai 15
+(0, console_1.log)("\nBai 15\n");
+const lib = new bai15_1.Library();
+lib.addBook(new bai15_1.Book1("1984", "Orwell"));
+lib.getBooks();

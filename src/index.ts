@@ -10,6 +10,7 @@ import { Rectangle } from "./bai4";
 import { BankAccount } from "./bai5";
 import { Product } from "./bai8";
 import { Developer, Manager } from "./bai14";
+import { Book1, Library } from "./bai15";
 
 // Bai 1
 console.log("Bai 1");
@@ -85,3 +86,9 @@ const manager = new Manager("Dino");
 const coder = new Developer("Timo");
 manager.manage();
 coder.code();
+
+// Bai 15
+log("\nBai 15\n");
+const lib = new Library();
+lib.addBook(new Book1("1984", "Orwell"));
+lib.getBooks();
