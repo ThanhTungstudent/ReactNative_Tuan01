@@ -11,6 +11,7 @@ import { BankAccount } from "./bai5";
 import { Product } from "./bai8";
 import { Developer, Manager } from "./bai14";
 import { Book1, Library } from "./bai15";
+import { Box } from "./bai16";
 
 // Bai 1
 console.log("Bai 1");
@@ -92,3 +93,8 @@ log("\nBai 15\n");
 const lib = new Library();
 lib.addBook(new Book1("1984", "Orwell"));
 lib.getBooks();
+
+// Bai 16
+log("\nBai 16\n");
+const numberBox = new Box<number>(123);
+log("Number in box: ", numberBox.value);
